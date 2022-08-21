@@ -1,3 +1,5 @@
+from re import I
+from select import kqueue
 import pandas as pd
 import streamlit as st
 
@@ -72,7 +74,7 @@ def body():
                         horizontal=True)
 
     choose9 = st.radio("------------------------------------------- 9 -------------------------------------------",
-                        ("Düzenli", "İyiliksever", "Dobra", "iyimser"),
+                        ("Düzenli", "İyiliksever", "Dobra", "İyimser"),
                         key="choose9",
                         horizontal=True)
 
@@ -174,7 +176,7 @@ def body():
                         horizontal=True)
 
     choose28 = st.radio("------------------------------------------- 28 -------------------------------------------",
-                        ("Sade", "Karamsar", "Kibirli", "Töleranslı"),
+                        ("Sade", "Karamsar", "Kibirli", "Toleranslı"),
                         key="choose28",
                         horizontal=True)
 
@@ -189,7 +191,7 @@ def body():
                         horizontal=True)
 
     choose31 = st.radio("------------------------------------------- 31 -------------------------------------------",
-                        ("Kaygılanan", "İçine Kapanık", "İş kolik", "Tanınmak istenen"),
+                        ("Kaygılanan", "İçine Kapanık", "İşkolik", "Tanınmak isteyen"),
                         key="choose31",
                         horizontal=True)
 
@@ -214,7 +216,7 @@ def body():
                         horizontal=True)
 
     choose36 = st.radio("------------------------------------------- 36 -------------------------------------------",
-                        ("Uyuşuk", "İnatçı", "Hava atan", "Kukucu"),
+                        ("Uyuşuk", "İnatçı", "Hava atan", "Kuşkucu"),
                         key="choose36",
                         horizontal=True)
 
@@ -246,6 +248,360 @@ def body():
         mavi += 1
     else:
         yesil += 1
+
+    if choose2 == "Neşeli":
+        sari += 1
+    elif choose2 == "İkna Edici":
+        kirmizi += 1
+    elif choose2 == "Mantıklı":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose3 == "Sosyal":
+        sari += 1
+    elif choose3 == "İradeli":
+        kirmizi += 1
+    elif choose3 == "Uysal":
+        mavi += 1
+    else:
+        yesil += 1 
+
+    if choose4 == "İnandırıcı":
+        sari += 1
+    elif choose4 == "Yarışçıl":
+        kirmizi += 1
+    elif choose4 == "İnsaflı":
+        mavi += 1
+    else:
+        yesil += 1 
+
+    if choose5 == "Ferahlatıcı":
+        sari += 1
+    elif choose5 == "Becerikli":
+        kirmizi += 1
+    elif choose5 == "Saygılı":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose6 == "Cesur":
+        sari += 1
+    elif choose6 == "Kendine güvenen":
+        kirmizi += 1
+    elif choose6 == "Duyarlı":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose7 == "Teşvik edici":
+        sari += 1
+    elif choose7 == "Olumlu":
+        kirmizi += 1
+    elif choose7 == "Planlı":
+        mavi += 1
+    else:
+        yesil += 1 
+
+    if choose8 == "Kendiliğinden":
+        sari += 1
+    elif choose8 == "Emin":
+        kirmizi += 1
+    elif choose8 == "Programa bağlı":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose9 == "İyimser":
+        sari += 1
+    elif choose9 == "Dobra":
+        kirmizi += 1
+    elif choose9 == "Düzenli":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose10 == "Komik":
+        sari += 1
+    elif choose10 == "Baskıcı":
+        kirmizi += 1
+    elif choose10 == "Sadık":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose11 == "Hoş":
+        sari += 1
+    elif choose11 == "Cesaretli":
+        kirmizi += 1
+    elif choose11 == "Detaycı":
+        mavi += 1 
+    else:
+        yesil += 1
+
+    if choose12 == "Esin kaynağı":
+        sari += 1
+    elif choose12 == "Güvenli":
+        kirmizi += 1
+    elif choose12 == "Kültürlü":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose13 == "Heyecanlandırıcı":
+        sari += 1
+    elif choose13 == "Bağımsız":
+        kirmizi += 1
+    elif choose13 == "İdealist":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose14 == "Coşkun":
+        sari += 1
+    elif choose14 == "Kesin":
+        kirmizi += 1
+    elif choose14 == "Derin düşünceli":
+        mavi += 1
+
+    if choose15 == "Kolay Kaynaşır":
+        sari += 1
+    elif choose15 == "Harekete geçiren":
+        kirmizi += 1
+    elif choose15 == "Ahenkli":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose16 == "Konuşma yanlısı":
+        sari += 1
+    elif choose16 == "İş Bitirici":
+        kirmizi += 1
+    elif choose16 == "İnce düşünceli":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose17 == "Canlı":
+        sari += 1
+    elif choose17 == "Lider":
+        kirmizi += 1
+    elif choose17 == "Samimi":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose18 == "Şirin":
+        sari += 1
+    elif choose18 == "Başkan, Şef":
+        kirmizi += 1
+    elif choose18 == "Araştırmacı":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose19 == "Popüler":
+        sari += 1
+    elif choose19 == "Üretici":
+        kirmizi += 1
+    elif choose19 == "Mükemmeliyetçi":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose20 == "Cömert":
+        sari += 1
+    elif choose20 == "Atılgan":
+        kirmizi += 1
+    elif choose20 == "Terbiyeli":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose21 == "Utanması olmayan":
+        sari += 1
+    elif choose21 == "Zorba":
+        kirmizi += 1
+    elif choose21 == "Çekingen":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose22 == "Disiplinsiz":
+        sari += 1
+    elif choose22 == "Sevimsiz":
+        kirmizi += 1
+    elif choose22 == "Affetmez":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose23 == "Tekrarlayan":
+        sari += 1
+    elif choose23 == "Dayanıksız":
+        kirmizi += 1
+    elif choose23 == "Kinci":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose24 == "Unutkan":
+        sari += 1
+    elif choose24 == "Açıksözlü":
+        kirmizi += 1
+    elif choose24 == "Titiz":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose25 == "Laf kesici":
+        sari += 1
+    elif choose25 == "Sabırsız":
+        kirmizi += 1
+    elif choose25 == "Güvensiz":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose26 == "Ne yapacağı belirsiz":
+        sari += 1
+    elif choose26 == "Şefkatsiz":
+        kirmizi += 1
+    elif choose26 == "Sevilmeyen":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose27 == "Gelişigüzel":
+        sari += 1
+    elif choose27 == "Dik kafalı":
+        kirmizi += 1
+    elif choose27 == "Zor beğenen":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose28 == "Toleranslı":
+        sari += 1
+    elif choose28 == "Kibirli":
+        kirmizi += 1
+    elif choose28 == "Karamsar":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose29 == "Kolay sinirlenir":
+        sari += 1
+    elif choose29 == "Tartışmacı":
+        kirmizi += 1
+    elif choose29 == "Soğuk":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose30 == "Saf":
+        sari += 1
+    elif choose30 == "Sinirli":
+        kirmizi += 1
+    elif choose30 == "Olumsuz tavırlı":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose31 == "Tanınmak isteyen":
+        sari += 1
+    elif choose31 == "İşkolik":
+        kirmizi += 1
+    elif choose31 == "İçine kapanık":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose32 == "Çok konuşan":
+        sari += 1
+    elif choose32 == "Kaba":
+        kirmizi += 1
+    elif choose32 == "Çok hassas":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose33 == "Organize olmamış":
+        sari += 1
+    elif choose33 == "Otoriter":
+        kirmizi += 1
+    elif choose33 == "Kederli":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose34 == "Tutarsız":
+        sari += 1
+    elif choose34 == "Hoşgörüsüz":
+        kirmizi += 1
+    elif choose34 == "İçe dönük":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose35 == "İnsan kullanan":
+        sari += 1
+    elif choose35 == "Dağınık":
+        kirmizi += 1
+    elif choose35 == "Huysuz":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose36 == "Hava atan":
+        sari += 1
+    elif choose36 == "İnatçı":
+        kirmizi += 1
+    elif choose36 == "Kuşkucu":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose37 == "Gürültücü":
+        sari += 1
+    elif choose37 == "Denetleyici":
+        kirmizi += 1
+    elif choose37 == "Yalnız":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose38 == "Dikkatsiz":
+        sari += 1
+    elif choose38 == "Çabuk öfkelenen":
+        kirmizi += 1
+    elif choose38 == "Şüpheci":
+        mavi += 1   
+    else:
+        yesil += 1
+
+    if choose39 == "Kötü dinleyici":
+        sari += 1
+    elif choose39 == "Patavatsız":
+        kirmizi += 1
+    elif choose39 == "İntikamcı":
+        mavi += 1
+    else:
+        yesil += 1
+
+    if choose40 == "Çabuk sıkılan":
+        sari += 1
+    elif choose40 == "Kurnaz":
+        kirmizi += 1
+    elif choose40 == "Eleştirici":
+        mavi += 1
+    else:
+        yesil += 1
+
+
+
+
+
 
     return mavi, sari, kirmizi, yesil
 
