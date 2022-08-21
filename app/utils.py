@@ -32,59 +32,59 @@ def body():
             )
 
     choose1 = st.radio("------------------------------------------- 1 -------------------------------------------",
-                       ("Sonuç Odaklı", "Uyum Sağlayan", "Hareketli", "Analitik"),
-                       key="choose1",
-                       horizontal=True)
+                        ("Sonuç Odaklı", "Uyum Sağlayan", "Hareketli", "Analitik"),
+                        key="choose1",
+                        horizontal=True)
 
     choose2 = st.radio("------------------------------------------- 2 -------------------------------------------",
-                       ("Mantıklı", "Neşeli", "İkna Edici", "Barışçıl"),
-                       key="choose2",
-                       horizontal=True)
+                        ("Mantıklı", "Neşeli", "İkna Edici", "Barışçıl"),
+                        key="choose2",
+                        horizontal=True)
 
     choose3 = st.radio("------------------------------------------- 3 -------------------------------------------",
-                       ("Uysal", "Fedakar", "Sosyal", "İradeli"),
-                       key="choose3",
-                       horizontal=True)
+                        ("Uysal", "Fedakar", "Sosyal", "İradeli"),
+                        key="choose3",
+                        horizontal=True)
 
     choose4 = st.radio("------------------------------------------- 4 -------------------------------------------",
-                       ("İnsaflı", "Denetimli", "Yarışçıl", "İnandırıcı"),
-                       key="choose4",
-                       horizontal=True)
+                        ("İnsaflı", "Denetimli", "Yarışçıl", "İnandırıcı"),
+                        key="choose4",
+                        horizontal=True)
 
     choose5 = st.radio("------------------------------------------- 5 -------------------------------------------",
-                       ("Ferahlatıcı", "Saygılı", "İyi dinleyici", "Becerikli"),
-                       key="choose5",
-                       horizontal=True)
+                        ("Ferahlatıcı", "Saygılı", "İyi dinleyici", "Becerikli"),
+                        key="choose5",
+                        horizontal=True)
 
     choose6 = st.radio("------------------------------------------- 6 -------------------------------------------",
-                       ("Hoşnut", "Duyarlı", "Kendine güvenen", "Cesur"),
-                       key="choose6",
-                       horizontal=True)
+                        ("Hoşnut", "Duyarlı", "Kendine güvenen", "Cesur"),
+                        key="choose6",
+                        horizontal=True)
 
     choose7 = st.radio("------------------------------------------- 7 -------------------------------------------",
-                       ("Planlı", "Sabırlı", "Olumlu", "Teşvik edici"),
-                       key="choose7",
-                       horizontal=True)
+                        ("Planlı", "Sabırlı", "Olumlu", "Teşvik edici"),
+                        key="choose7",
+                        horizontal=True)
 
     choose8 = st.radio("------------------------------------------- 8 -------------------------------------------",
-                       ("Emin", "Kendiliğinden", "Programa bağlı", "Utangaç"),
-                       key="choose8",
-                       horizontal=True)
+                        ("Emin", "Kendiliğinden", "Programa bağlı", "Utangaç"),
+                        key="choose8",
+                        horizontal=True)
 
     choose9 = st.radio("------------------------------------------- 9 -------------------------------------------",
-                       ("Düzenli", "İyiliksever", "Dobra", "iyimser"),
-                       key="choose9",
-                       horizontal=True)
+                        ("Düzenli", "İyiliksever", "Dobra", "iyimser"),
+                        key="choose9",
+                        horizontal=True)
 
     choose10 = st.radio("------------------------------------------- 10 -------------------------------------------",
                         ("Arkadaşçıl", "Sadık", "Komik", "Baskıcı"),
                         key="choose10",
-                       horizontal=True)
+                        horizontal=True)
 
     choose11 = st.radio("------------------------------------------- 11 -------------------------------------------",
                         ("Cesaretli", "Hoş", "Diplomatik", "Detaycı"),
                         key="choose11",
-                       horizontal=True)
+                        horizontal=True)
 
     choose12 = st.radio("------------------------------------------- 12 -------------------------------------------",
                         ("Esin Kaynağı", "Tutarlı", "Kültürlü", "Güvenli"),
@@ -230,6 +230,8 @@ def body():
                         ("Uzlaşmacı", "Eleştirici", "Kurnaz", "Çabuk sıkılan"),
                         key="choose40",
                         horizontal=True)
+
+
     bir = 5
     iki = 10
     uc = 2
