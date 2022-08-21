@@ -23,7 +23,7 @@ def head():
 
 
 def body():
-    bir, iki, uc, dort = 0, 0, 0, 0
+    mavi, sari, kirmizi, yesil = 0, 0, 0, 0
     st.markdown("""
             <p style='text-align: center'>
             Güçlü Yönler. Her dört seçenekten birini seçiniz.
@@ -131,6 +131,13 @@ def body():
                         key="choose20",
                         horizontal=True)
 
+    st.markdown("""
+            <p style='text-align: center; margin-bottom: 25px; margin-top: 25px;'>
+            Zayıf Yönler. Her dört seçenekten birini seçiniz.
+            </p>
+        """, unsafe_allow_html=True
+            )
+
     choose21 = st.radio("------------------------------------------- 21 -------------------------------------------",
                         ("İfadesiz", "Çekingen", "Utanması olmayan", "Zorba"),
                         key="choose21",
@@ -231,13 +238,14 @@ def body():
                         key="choose40",
                         horizontal=True)
 
-
-    bir = 5
-    iki = 10
-    uc = 2
-    dort = 1
     if choose1 == "Hareketli":
-        bir += 1
-    return bir, iki, uc, dort
+        sari += 1
+    elif choose1 == "Sonuç odaklı":
+        kirmizi += 1
+    elif choose1 == "Analitik":
+        mavi += 1
+    else:
+        yesil += 1
 
+    return mavi, sari, kirmizi, yesil
 
