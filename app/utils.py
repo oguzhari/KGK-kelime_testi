@@ -89,6 +89,7 @@ def body():
     iki = 10
     uc = 2
     dort = 1
+    print("test")
     if choose1 == "Hareketli":
         bir += 1
     return bir, iki, uc, dort
