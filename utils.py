@@ -599,18 +599,19 @@ def body():
 
 def save_file(file_name):
     gauth = GoogleAuth()
-    gauth.LoadCredentialsFile("mycreds.txt")
-    if gauth.credentials is None:
-        # Authenticate if they're not there
-        gauth.LocalWebserverAuth()
-    elif gauth.access_token_expired:
-        # Refresh them if expired
-        gauth.Refresh()
-    else:
-        # Initialize the saved creds
-        gauth.Authorize()
+    create_cred_file()
+    #gauth.LoadCredentialsFile(st.secrets("my_creds"))
+    #if gauth.credentials is None:
+    #    # Authenticate if they're not there
+    #    gauth.LocalWebserverAuth()
+    #elif gauth.access_token_expired:
+    #    # Refresh them if expired
+    #    gauth.Refresh()
+    #else:
+    #    # Initialize the saved creds
+    #    gauth.Authorize()
     # Save the current credentials to a file
-    gauth.SaveCredentialsFile("mycreds.txt")
+    gauth.LoadCredentialsFile('mycreds_test.txt')
 
     drive = GoogleDrive(gauth)
     folderName = 'Renk Testi'  # Please set the folder name.
@@ -623,3 +624,29 @@ def save_file(file_name):
             file2 = drive.CreateFile({'parents': [{'id': folder['id']}]})
             file2.SetContentFile(file_name)
             file2.Upload()
+
+
+def create_cred_file():
+    cred_str = '{"access_token": "' + st.secrets["access_token"] +\
+               '", "client_id": "' + st.secrets["client_id"] +\
+               '", "client_secret": "' + st.secrets["client_secret"] + \
+               '", "refresh_token": "' + st.secrets["refresh_token"] + \
+               '", "token_expiry": "' + st.secrets["token_expiry"] + \
+               '", "token_uri": "' + st.secrets["token_uri"] + \
+               '", "user_agent": null' + \
+               ', "revoke_uri": "' + st.secrets["revoke_uri"] + \
+               '", "id_token": null' + \
+               ', "id_token_jwt": null' + \
+               ', "token_response": {"access_token": "' + st.secrets["token_response"]["access_token"] + \
+               '", "expires_in": ' + str(st.secrets["token_response"]["expires_in"]) + \
+               ', "refresh_token": "' + st.secrets["token_response"]["refresh_token"] + \
+               '", "scope": "' + st.secrets["token_response"]["scope"] + \
+               '", "token_type": "' + st.secrets["token_response"]["token_type"] + \
+               '"}, "scopes": ["https://www.googleapis.com/auth/drive"]' + \
+               ', "token_info_uri": "' + st.secrets["token_info_uri"] + \
+               '", "invalid": false' + \
+               ', "_class": "' + st.secrets["_class"] + \
+               '", "_module": "' + st.secrets["_module"] + '"}'
+    text_file = open("mycreds_test.txt", "w")
+    n = text_file.write(cred_str)
+    text_file.close()
