@@ -37,5 +37,5 @@ if st.button('Analiz Et'):
             plt.savefig(file_name, dpi=400)
             st.success("Analiz oluşturuldu, kaydediliyor...")
             save_file(file_name)
-            st.success("Analiz Kaydedildi, iozgEr@sakarya.edu.tr adresiyle iletişime geçebilirsiniz.")
+            st.success("Analiz Kaydedildi, iozger@sakarya.edu.tr adresiyle iletişime geçebilirsiniz.")
 
