@@ -1,11 +1,7 @@
-from re import I
-from select import kqueue
-import pandas as pd
 import streamlit as st
+from pydrive.auth import GoogleAuth
+from pydrive.drive import GoogleDrive
 
-choose1, choose2, choose3, choose4, choose5 = "", "", "", "", ""
-choose6, choose7, choose8, choose9, choose10 = "", "", "", "", ""
-choose11, choose12 = "", ""
 
 def head():
     st.markdown("""
@@ -265,7 +261,7 @@ def body():
     elif choose3 == "Uysal":
         mavi += 1
     else:
-        yesil += 1 
+        yesil += 1
 
     if choose4 == "İnandırıcı":
         sari += 1
@@ -274,7 +270,7 @@ def body():
     elif choose4 == "İnsaflı":
         mavi += 1
     else:
-        yesil += 1 
+        yesil += 1
 
     if choose5 == "Ferahlatıcı":
         sari += 1
@@ -301,7 +297,7 @@ def body():
     elif choose7 == "Planlı":
         mavi += 1
     else:
-        yesil += 1 
+        yesil += 1
 
     if choose8 == "Kendiliğinden":
         sari += 1
@@ -335,7 +331,7 @@ def body():
     elif choose11 == "Cesaretli":
         kirmizi += 1
     elif choose11 == "Detaycı":
-        mavi += 1 
+        mavi += 1
     else:
         yesil += 1
 
@@ -576,7 +572,7 @@ def body():
     elif choose38 == "Çabuk öfkelenen":
         kirmizi += 1
     elif choose38 == "Şüpheci":
-        mavi += 1   
+        mavi += 1
     else:
         yesil += 1
 
@@ -598,10 +594,32 @@ def body():
     else:
         yesil += 1
 
-
-
-
-
-
     return mavi, sari, kirmizi, yesil
 
+
+def save_file(file_name):
+    gauth = GoogleAuth()
+    gauth.LoadCredentialsFile("mycreds.txt")
+    if gauth.credentials is None:
+        # Authenticate if they're not there
+        gauth.LocalWebserverAuth()
+    elif gauth.access_token_expired:
+        # Refresh them if expired
+        gauth.Refresh()
+    else:
+        # Initialize the saved creds
+        gauth.Authorize()
+    # Save the current credentials to a file
+    gauth.SaveCredentialsFile("mycreds.txt")
+
+    drive = GoogleDrive(gauth)
+    folderName = 'Renk Testi'  # Please set the folder name.
+
+    folders = drive.ListFile(
+        {
+            'q': "title='" + folderName + "' and mimeType='application/vnd.google-apps.folder' and trashed=false"}).GetList()
+    for folder in folders:
+        if folder['title'] == folderName:
+            file2 = drive.CreateFile({'parents': [{'id': folder['id']}]})
+            file2.SetContentFile(file_name)
+            file2.Upload()
