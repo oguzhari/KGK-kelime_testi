@@ -16,13 +16,13 @@ if st.button('Analiz Et'):
     else:
         file_name = ogr_ad.title().strip() + "-" + ogr_no.strip() + ".png"
 
-        labels = 'Mavi', 'Kırmızı', 'Sarı', 'Yeşil'
+        labels = 'Melankolik', 'Güçlü Klorik', 'Popüler-Optimist', 'Barışçıl-Soğukkanlı'
         sizes = [bir, iki, uc, dort]
-        explode = (0, 0.1, 0, 0)
-        colours = {'Mavi': 'b',
-                   'Kırmızı': 'r',
-                   'Sarı': 'y',
-                   'Yeşil': 'g'}
+        explode = (0.1, 0.1, 0.1, 0)
+        colours = {'Melankolik': 'b',
+                   'Güçlü Klorik': 'r',
+                   'Popüler-Optimist': 'y',
+                   'Barışçıl-Soğukkanlı': 'g'}
 
         fig, ax = plt.subplots()
         ax.title.set_text(ogr_ad.title().strip() + "-" + ogr_no.strip())
@@ -37,5 +37,5 @@ if st.button('Analiz Et'):
             plt.savefig(file_name, dpi=400)
             st.success("Analiz oluşturuldu, kaydediliyor...")
             save_file(file_name)
-            st.success("Analiz Kaydedildi, iozger@sakarya.edu.tr adresiyle iletişime geçebilirsiniz.")
+            st.success("Analiz Kaydedildi, kariyer@sakarya.edu.tr adresiyle iletişime geçebilirsiniz.")
 

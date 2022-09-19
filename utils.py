@@ -23,9 +23,9 @@ def head():
 def body():
     mavi, sari, kirmizi, yesil = 0, 0, 0, 0
     st.markdown("""
-            <p style='text-align: center'>
+            <h3 style='text-align: center'>
             Güçlü Yönler. Her dört seçenekten birini seçiniz.
-            </p>
+            </h3>
         """, unsafe_allow_html=True
             )
 
@@ -130,9 +130,9 @@ def body():
                         horizontal=True)
 
     st.markdown("""
-            <p style='text-align: center; margin-bottom: 25px; margin-top: 25px;'>
+            <h3 style='text-align: center; margin-bottom: 25px; margin-top: 25px;'>
             Zayıf Yönler. Her dört seçenekten birini seçiniz.
-            </p>
+            </h3>
         """, unsafe_allow_html=True
             )
 
