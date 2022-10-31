@@ -38,4 +38,6 @@ if st.button('Analiz Et'):
             st.success("Analiz oluşturuldu, kaydediliyor...")
             save_file(file_name)
             st.success("Analiz Kaydedildi, kariyer@sakarya.edu.tr adresiyle iletişime geçebilirsiniz.")
+            st.balloons()
 
+version()
