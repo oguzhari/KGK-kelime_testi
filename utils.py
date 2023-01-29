@@ -28,139 +28,139 @@ def body():
         """, unsafe_allow_html=True
             )
 
-    col1, col2, col3 = st.columns([1, 5, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose1 = st.radio("------------------------------------- " + "1" + " -------------------------------------",
                             ("Sonuç Odaklı", "Uyum Sağlayan", "Hareketli", "Analitik"),
                             key="choose1",
                             horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose2 = st.radio("------------------------------------- " + "2" + " -------------------------------------",
                             ("Mantıklı", "Neşeli", "İkna Edici", "Barışçıl"),
                             key="choose2",
                             horizontal=True)
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose3 = st.radio("------------------------------------- " + "3" + " -------------------------------------",
                             ("Uysal", "Fedakar", "Sosyal", "İradeli"),
                             key="choose3",
                             horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose4 = st.radio("------------------------------------- " + "4" + " -------------------------------------",
                                 ("İnsaflı", "Denetimli", "Yarışçıl", "İnandırıcı"),
                                 key="choose4",
                                 horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose5 = st.radio("------------------------------------- " + "5" + " -------------------------------------",
                                 ("Ferahlatıcı", "Saygılı", "İyi dinleyici", "Becerikli"),
                                 key="choose5",
                                 horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose6 = st.radio("------------------------------------- " + "6" + " -------------------------------------",
                             ("Hoşnut", "Duyarlı", "Kendine güvenen", "Cesur"),
                             key="choose6",
                             horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose7 = st.radio("------------------------------------- " + "7" + " -------------------------------------",
                             ("Planlı", "Sabırlı", "Olumlu", "Teşvik edici"),
                             key="choose7",
                             horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 5, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose8 = st.radio("------------------------------------- " + "8" + " -------------------------------------",
                             ("Emin", "Kendiliğinden", "Programa bağlı", "Utangaç"),
                             key="choose8",
                             horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose9 = st.radio("------------------------------------- " + "9" + " -------------------------------------",
                             ("Düzenli", "İyiliksever", "Dobra", "İyimser"),
                             key="choose9",
                             horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose10 = st.radio("------------------------------------- " + "10" + "-------------------------------------",
                             ("Arkadaşçıl", "Sadık", "Komik", "Baskıcı"),
                             key="choose10",
                             horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose11 = st.radio("------------------------------------- " + "11" + "-------------------------------------",
                             ("Cesaretli", "Hoş", "Diplomatik", "Detaycı"),
                             key="choose11",
                             horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose12 = st.radio("------------------------------------- " + "12" + "-------------------------------------",
                             ("Esin Kaynağı", "Tutarlı", "Kültürlü", "Güvenli"),
                             key="choose12",
                             horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose13 = st.radio("------------------------------------- " + "13" + "-------------------------------------",
                             ("İdealist", "Bağımsız", "Zararsız", "Heyecanlandırıcı"),
                             key="choose13",
                             horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose14 = st.radio("------------------------------------- " + "14" + "-------------------------------------",
                             ("Coşkun", "Kesin", "Kuru esprili", "Derin düşünceli"),
                             key="choose14",
                             horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 5, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose15 = st.radio("------------------------------------- " + "15" + "-------------------------------------",
                             ("Aracı", "Ahenkli", "Harekete geçiren", "Kolay kaynaşır"),
                             key="choose15",
                             horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 6, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose16 = st.radio("------------------------------------- " + "16" + "-------------------------------------",
                             ("İnce düşünceli", "İş Bitirici", "Konuşma yanlısı", "Hoşgörülü"),
                             key="choose16",
                             horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose17 = st.radio("------------------------------------- " + "17" + "-------------------------------------",
                             ("Destekleyen", "Samimi", "Lider", "Canlı"),
                             key="choose17",
                             horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 5, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose18 = st.radio("------------------------------------- " + "18" + "-------------------------------------",
                             ("Halinden memnun", "Başkan, Şef", "Araştırmacı", "Şirin"),
                             key="choose18",
                             horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose19 = st.radio("------------------------------------- " + "19" + "-------------------------------------",
                         ("Mükemmeliyetçi", "Cana yakın", "Üretici", "Popüler"),
                         key="choose19",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose20 = st.radio("------------------------------------- " + "20" + "-------------------------------------",
                         ("Cömert", "Atılgan", "Terbiyeli", "Dengeli"),
@@ -174,139 +174,139 @@ def body():
         """, unsafe_allow_html=True
             )
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose21 = st.radio("------------------------------------- " + "21" + "-------------------------------------",
                         ("İfadesiz", "Çekingen", "Utanması olmayan", "Zorba"),
                         key="choose21",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose22 = st.radio("------------------------------------- " + "22" + "-------------------------------------",
                         ("Disiplinsiz", "Sevimsiz", "Donuk", "Affetmez"),
                         key="choose22",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose23 = st.radio("------------------------------------- " + "23" + "-------------------------------------",
                         ("Ketum", "Kinci", "Dayanıksız", "Tekrarlayan"),
                         key="choose23",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose24 = st.radio("------------------------------------- " + "24" + "-------------------------------------",
                         ("Titiz", "Korkak", "Unutkan", "Açıksözlü"),
                         key="choose24",
                         horizontal=True)
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose25 = st.radio("------------------------------------- " + "25" + "-------------------------------------",
                         ("Sabırsız", "Güvensiz", "Kararsız", "Laf kesici"),
                         key="choose25",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 8, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose26 = st.radio("------------------------------------- " + "26" + "-------------------------------------",
                         ("Sevilmeyen", "İşe karışmayan", "Ne yapacağı belirsiz", "Şefkatsiz"),
                         key="choose26",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 6, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose27 = st.radio("------------------------------------- " + "27" + "-------------------------------------",
                         ("Dik kafalı", "Gelişigüzel", "Zor beğenen", "Tereddütlü"),
                         key="choose27",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose28 = st.radio("------------------------------------- " + "28" + "-------------------------------------",
                         ("Sade", "Karamsar", "Kibirli", "Toleranslı"),
                         key="choose28",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose29 = st.radio("------------------------------------- " + "29" + " -------------------------------------",
                         ("Kolay sinirlenir", "Amaçsız", "Tartışmacı", "Soğuk"),
                         key="choose29",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose30 = st.radio("------------------------------------- " + "30" + " -------------------------------------",
                         ("Saf", "Olumsuz tavırlı", "Sinirli", "Kayıtsız"),
                         key="choose30",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 6, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose31 = st.radio("------------------------------------- " + "31" + " -------------------------------------",
                         ("Kaygılanan", "İçine Kapanık", "İşkolik", "Tanınmak isteyen"),
                         key="choose31",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose32 = st.radio("------------------------------------- " + "32" + " -------------------------------------",
                         ("Çok hassas", "Kaba", "Ürkek", "Çok konuşan"),
                         key="choose32",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose33 = st.radio("------------------------------------- " + "33" + " -------------------------------------",
                         ("Kuşkulu", "Organize olmamış", "Otoriter", "Kederli"),
                         key="choose33",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose34 = st.radio("------------------------------------- " + "34" + " -------------------------------------",
                         ("Tutarsız", "İçe dönük", "Hoşgörüsüz", "Sıradan"),
                         key="choose34",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 10, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose35 = st.radio("------------------------------------- " + "35" + " -------------------------------------",
                         ("Dağınık", "Huysuz", "Ağzında kelimeleri yuvarlayan", "İnsan kullanan"),
                         key="choose35",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose36 = st.radio("------------------------------------- " + "36" + " -------------------------------------",
                         ("Uyuşuk", "İnatçı", "Hava atan", "Kuşkucu"),
                         key="choose36",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose37 = st.radio("------------------------------------- " + "37" + " -------------------------------------",
                         ("Yalnız", "Denetleyici", "Tembel", "Gürültücü"),
                         key="choose37",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose38 = st.radio("------------------------------------- " + "38" + " -------------------------------------",
                         ("Miskin", "Şüpheci", "Çabuk öfkelenen", "Dikkatsiz"),
                         key="choose38",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose39 = st.radio("------------------------------------- " + "39" + " -------------------------------------",
                         ("İntikamcı", "Patavatsız", "İsteksiz", "Kötü dinleyici"),
                         key="choose39",
                         horizontal=True)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         choose40 = st.radio("------------------------------------- " + "40" + " -------------------------------------",
                         ("Uzlaşmacı", "Eleştirici", "Kurnaz", "Çabuk sıkılan"),
