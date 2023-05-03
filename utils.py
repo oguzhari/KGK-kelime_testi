@@ -6,7 +6,7 @@ from pydrive.drive import GoogleDrive
 def head():
     st.markdown("""
         <h1 style='text-align: center'>
-        Kelime Testi Analizi
+        Kelime Testi Envanteri
         </h1>
     """, unsafe_allow_html=True
                 )
