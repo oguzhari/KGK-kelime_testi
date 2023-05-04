@@ -1,18 +1,19 @@
 from utils import *
 import matplotlib.pyplot as plt
+import send_mail
 
 head()
 bir, iki, uc, dort = body()
 
 
 ogr_ad = st.text_input("Adınız-Soyadınız")
+ogr_mail = st.text_input("Mail Adresiniz")
 ogr_no = st.text_input("Öğrenci Numaranız")
 
 
-
 if st.button('Analiz Et'):
-    if ogr_no == "" or ogr_ad == "":
-        st.error("Adınızı ya da numaranızı girmediniz. Lütfen Kontrol edin.")
+    if ogr_no == "" or ogr_ad == "" or ogr_mail == "":
+        st.error("Adınızı, öğrenci numaranızı veya mail adresini girmediniz. Lütfen Kontrol edin.")
     else:
         file_name = ogr_ad.title().strip() + "-" + ogr_no.strip() + ".png"
 
@@ -37,7 +38,8 @@ if st.button('Analiz Et'):
             plt.savefig(file_name, dpi=400)
             st.success("Analiz oluşturuldu, kaydediliyor...")
             save_file(file_name)
-            st.balloons()
+            send_mail.send_analysis(ogr_mail, [file_name])
             st.success("Analiz Kaydedildi, kariyer@sakarya.edu.tr adresiyle iletişime geçebilirsiniz.")
+        st.balloons()
 
 version()
