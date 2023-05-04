@@ -41,7 +41,7 @@ def send_analysis(recipients_addr, files_path=None, server='smtp.gmail.com'):
     TO = recipients_addr if isinstance(recipients_addr, list) else recipients_addr.split(' ')
     PASS = password
     SERVER = server
-    SUBJECT = "Renkler ve Kişilik Envanteri Sonuçları"
+    SUBJECT = "Kelime Testi Envanteri Sonuçları"
     BODY = "Tamamlamış olduğunuz envantere ait sonuçlar ekte yer almaktadır."
     msg = mime_init(FROM, TO, SUBJECT, BODY)
 
