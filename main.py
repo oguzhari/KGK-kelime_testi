@@ -37,9 +37,9 @@ if st.button('Analiz Et'):
         with st.empty():
             plt.savefig(file_name, dpi=400)
             st.success("Analiz oluşturuldu, kaydediliyor...")
-            # save_file(file_name)
             send_mail.send_analysis(ogr_mail, [file_name])
-            st.success("Analiz Kaydedildi, kariyer@sakarya.edu.tr adresiyle iletişime geçebilirsiniz.")
+            st.success("Analiz Kaydedildi ve mail adresinize gönderildi, kariyer@sakarya.edu.tr adresiyle iletişime "
+                       "geçebilirsiniz.")
         st.balloons()
 
 version()
