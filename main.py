@@ -17,7 +17,7 @@ if st.button('Analiz Et'):
     else:
         file_name = ogr_ad.title().strip() + "-" + ogr_no.strip() + ".png"
 
-        labels = 'Melankolik', 'Güçlü Klorik', 'Popüler-Optimist', 'Barışçıl-Soğukkanlı'
+        labels = 'Ciddi', 'Dominant', 'Sadık', 'İz Bırakan'
         sizes = [bir, iki, uc, dort]
         explode = (0.1, 0.1, 0.1, 0)
         colours = {'Ciddi': 'b',
