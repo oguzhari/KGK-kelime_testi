@@ -20,10 +20,10 @@ if st.button('Analiz Et'):
         labels = 'Melankolik', 'Güçlü Klorik', 'Popüler-Optimist', 'Barışçıl-Soğukkanlı'
         sizes = [bir, iki, uc, dort]
         explode = (0.1, 0.1, 0.1, 0)
-        colours = {'Melankolik': 'b',
-                   'Güçlü Klorik': 'r',
-                   'Popüler-Optimist': 'y',
-                   'Barışçıl-Soğukkanlı': 'g'}
+        colours = {'Ciddi': 'b',
+                   'Dominant': 'r',
+                   'Sadık': 'y',
+                   'İz Bırakan': 'g'}
 
         fig, ax = plt.subplots()
         ax.title.set_text(ogr_ad.title().strip() + "-" + ogr_no.strip())
