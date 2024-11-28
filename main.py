@@ -17,13 +17,13 @@ if st.button('Analiz Et'):
     else:
         file_name = ogr_ad.title().strip() + "-" + ogr_no.strip() + ".png"
 
-        labels = 'Ciddi', 'Dominant', 'Sadık', 'İz Bırakan'
+        labels = 'Ciddi', 'Dominant', 'İz Bırakan ', 'Sadık'
         sizes = [bir, iki, uc, dort]
         explode = (0.1, 0.1, 0.1, 0)
         colours = {'Ciddi': 'b',
                    'Dominant': 'r',
-                   'Sadık': 'y',
-                   'İz Bırakan': 'g'}
+                   'İz Bırakan': 'y',
+                   'Sadık': 'g'}
 
         fig, ax = plt.subplots()
         ax.title.set_text(ogr_ad.title().strip() + "-" + ogr_no.strip())
