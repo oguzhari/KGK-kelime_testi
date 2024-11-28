@@ -732,7 +732,7 @@ def create_cred_file():
 def version():
     st.caption("""
                 <p style='text-align: center;'>
-                ver 1.1.0<br/><font size="2">build 28122024.1706</font>
+                ver 1.1.0<br/><font size="2">build 28122024.1710</font>
                 </p>
             """, unsafe_allow_html=True
                )
