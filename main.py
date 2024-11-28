@@ -29,8 +29,7 @@ if st.button('Analiz Et'):
         max_score = max(sizes)
         max_score_index = sizes.index(max_score)
         max_score_label = labels[max_score_index]
-        max_score_colour = colours[max_score_label]
-        max_score_text = f"{max_score_label} (%{max_score})"
+        max_score_text = f"{max_score_label} (%{sizes})"
 
         fig, ax = plt.subplots()
         ax.title.set_text(ogr_ad.title().strip() + "-" + ogr_no.strip())
@@ -43,7 +42,7 @@ if st.button('Analiz Et'):
                startangle=90)  # Equal aspect ratio ensures that pie is drawn as a circle.
 
         # texti en alta yaz
-        ax.text(0, -1.5, max_score_text, color=max_score_colour, fontsize=12, ha='center')
+        ax.text(0, -1.5, max_score_text, color='black', fontsize=12, ha='center')
         with st.empty():
             plt.savefig(file_name, dpi=400)
             st.success("Analiz oluşturuldu, kaydediliyor...")
