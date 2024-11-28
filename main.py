@@ -29,7 +29,7 @@ if st.button('Analiz Et'):
         max_score = max(sizes)
         max_score_index = sizes.index(max_score)
         max_score_label = labels[max_score_index]
-        max_score_text = f"{max_score_label} (%{sizes})"
+        max_score_text = f"{max_score_label} (%{max_score/sum(sizes) * 100})"
 
         fig, ax = plt.subplots()
         ax.title.set_text(ogr_ad.title().strip() + "-" + ogr_no.strip())
