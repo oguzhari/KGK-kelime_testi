@@ -13,7 +13,7 @@ def head():
 
     st.caption("""
         <p style='text-align: center;margin-bottom: 50px;'>
-        Sakarya Üniversitesi Kariyer Geliştirme Yönetimi Koordinatörlüğü
+        Sakarya Üniversitesi Kariyer Geliştirme Koordinatörlüğü
         </p>
     """, unsafe_allow_html=True
                )

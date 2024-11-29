@@ -37,7 +37,7 @@ def send_analysis(recipients_addr, files_path=None, server='smtp.gmail.com'):
     user = st.secrets["sau_kariyer"]
     password = st.secrets["sau_kariyer_sifre"]
     #   assert isinstance(recipents_addr, list)
-    FROM = "Sakarya Üniversitesi Kariyer ve Yetenek Yönetimi Koordinatörlüğü"
+    FROM = "Sakarya Üniversitesi Kariyer Geliştirme Koordinatörlüğü"
     TO = recipients_addr if isinstance(recipients_addr, list) else recipients_addr.split(' ')
     PASS = password
     SERVER = server
@@ -87,7 +87,7 @@ def send_analysi_to_analysis(recipients_addr, files_path=None, server='smtp.gmai
     user = st.secrets["sau_kariyer"]
     password = st.secrets["sau_kariyer_sifre"]
     #   assert isinstance(recipents_addr, list)
-    FROM = "Sakarya Üniversitesi Kariyer ve Yetenek Yönetimi Koordinatörlüğü"
+    FROM = "Sakarya Üniversitesi Kariyer Geliştirme Koordinatörlüğü"
     TO = recipients_addr if isinstance(recipients_addr, list) else recipients_addr.split(' ')
     PASS = password
     SERVER = server
